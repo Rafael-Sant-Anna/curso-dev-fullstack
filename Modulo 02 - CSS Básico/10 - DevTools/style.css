@@ -1,0 +1,17 @@
+body{
+    background:#dfdfdf;
+}
+
+.foto{
+    width: 200px;
+    border: 2px solid #FFF; 
+    border-radius: 50%;
+    margin: 30px;
+    
+}
+
+p{
+    color: rgb(34, 34, 34);
+}
+
+

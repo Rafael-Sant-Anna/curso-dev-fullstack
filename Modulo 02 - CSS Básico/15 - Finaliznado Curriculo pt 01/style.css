@@ -1,0 +1,78 @@
+body{
+    background:#dfdfdf;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    color: rgb(34, 34, 34);
+    
+
+    /*
+        font-family                
+        Determina o tipo de fonte que será usuado.
+        A exeplicação é a seguinte, caso não acha a Arial, tenta a próxima,
+        por isso é permitido passar N fontes.
+    */
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-principal{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.sub-titulo{
+    margin-top: 0;
+    font-style: italic;
+    color: rgb(73,73,73);
+    font-weight: 200;
+    letter-spacing: -1;
+
+     /*
+        font-style                
+        Determina se a fonte será italica ou não.
+
+        font-weight                
+        Determina se a fonte será bold, grossa ou fina.
+
+        letter-spacing
+        Determina o espaçamento entre as letras da palavra.
+        
+    */ 
+}
+
+.foto{
+    width: 200px;
+    border: 2px solid #FFF; 
+    border-radius: 50%;
+    margin: 30px 30px 0px;
+    box-shadow: 0px 0px 12px #FFF;    
+}
+
+.social-links{
+    text-decoration: none;
+    /*
+     Removendo o anderlaine da ancora serve somente para os links.
+    */
+}
+
+.social-icons{
+    width: 40px;
+    /*
+     Como não passei o height ele se ajusta sozinho.
+    */
+}
+
+.github{
+    margin: 0 15px;
+}
+
+
+
+

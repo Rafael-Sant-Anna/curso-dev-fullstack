@@ -1,0 +1,25 @@
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    /*background-position: 100% 10%;*/
+
+    /* Deixando a imagem alinha a direita e no centro    
+    background-position: right center;*/
+
+    /*
+     Deixando a imagem no centro
+    background-position: center center;*/
+
+    /* Deixando a imagem na tela toda */
+    background-size: cover;
+
+    /*A imagem fica fixa não rolando junto ao Scroll*/
+    background-attachment: fixed;    
+
+}
+
+p{
+    color: rgb(34, 34, 34);
+}
+
+

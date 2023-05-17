@@ -1,0 +1,33 @@
+body{
+    background:#dfdfdf;
+}
+
+.foto{
+    width: 200px;
+    border: 2px solid #FFF; 
+    border-radius: 50%;
+
+    /*
+        Border-Radius
+        Permite alterar cada uma das bordas;
+        imagine um objeto quadrado, então temos, 4 bordas, 
+        sendo superiores esquerda, direita e 
+        inferiores também esquerda e direita.
+
+        Exemplo: border-radius: SE-50% SD-10% ID-30% IE70%; 
+        Legenda 
+            S - Superior 
+            I - Inferior
+            E - Esquerda
+            D - Direita
+
+        Exemplo:border-radius: 50%; Nesse caso a imagem ficara redonda.
+    */    
+    
+}
+
+p{
+    color: rgb(34, 34, 34);
+}
+
+

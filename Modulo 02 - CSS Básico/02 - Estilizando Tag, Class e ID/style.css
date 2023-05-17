@@ -1,0 +1,18 @@
+body{
+    background: red;
+}
+
+.foto{
+    width: 200px;
+    border-radius: 50%;    
+}
+
+h3{
+    color: green;
+}
+
+
+#titulo-principal{
+    color: yellow;
+}
+

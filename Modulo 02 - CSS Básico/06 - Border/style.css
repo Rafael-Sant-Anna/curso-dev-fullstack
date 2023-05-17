@@ -1,0 +1,48 @@
+body{
+    background:#dfdfdf;
+}
+
+.foto{
+    width: 200px;
+    border: 2px solid #FFF; 
+    border-radius: 50%;
+
+    /*
+        Border
+        * Shorthand (Mais convencional) -  quando você posso passar todas as propriedades de uma só vez.
+        exemplo: border: 2px solid #FFF; Nesse exmplo estou passando a espesura,
+        o tipo/estilo de borda e a cor.
+        obs.: A vantagem é que passo tudo em uma linha.
+
+        * Antigo - Quando tenho que passar propriedade por propriedade.
+        Exemplo:
+            border-width:  2px; Para determinar a espesura da borda.
+            border-style: solid; Para determinar o tipo/estilo da borda.
+            border-color: black; para determinar a cor da borda.
+        obs.: Tenho mais linhas no codigo.
+
+        Tipos/Estilos de borda:
+        border: 2px dotted black;
+        border: 2px dashed  black;
+        border: 2px solid black;
+        border: 2px double black;
+        border: 2px groove black;
+        border: 2px ridge black;
+        border: 2px inset  black;
+        border: 2px outset  black;
+        border: 2px none  black;
+        border: 2px hidden  black;
+        obs.: Os tipos/Estilo estão no site:  https://www.w3schools.com/css/css_border.asp
+
+        Border-Radius
+        Permite você alterar o display
+        Exemplo:border-radius: 50%; Nesse caso a imagem ficara redonda.
+    */    
+    
+}
+
+p{
+    color: rgb(34, 34, 34);
+}
+
+

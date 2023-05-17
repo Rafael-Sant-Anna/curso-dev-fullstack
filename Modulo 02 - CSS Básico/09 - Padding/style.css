@@ -1,0 +1,35 @@
+body{
+    background:#dfdfdf;
+}
+
+.foto{
+    width: 200px;
+    border: 2px solid #FFF; 
+    border-radius: 50%;
+    margin: 30px;
+    padding: 10px ;
+    
+    /*
+        Padding
+        Da espacamento Interno
+        
+        * Shorthand (Mais convencional) -  quando você posso passar todas as propriedades de uma só vez.
+        exemplo: padding: 30px 30px 30px 30px; Nesse exmplo estou passando a espesura,
+        as dimensões de Top, Direita, baixo e esquerda.
+        obs.: A vantagem é que passo tudo em uma linha.
+
+        * Antigo - Quando tenho que passar propriedade por propriedade.
+        Exemplo:
+            padding-top: 30px; 
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+        obs.: Tenho mais linhas no codigo.  
+    */
+}
+
+p{
+    color: rgb(34, 34, 34);
+}
+
+
