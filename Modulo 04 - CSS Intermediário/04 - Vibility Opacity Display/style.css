@@ -1,0 +1,17 @@
+ul {
+    background-color: grey;
+    padding: 20px;
+    /* 
+    display: none - remove o elemento e não ocupa o espaço do mesmo;
+    visibility: hidden - remove o elemento e ocupa o espaço deixado pelo o elemento.
+    */
+
+    opacity: 0.5;
+
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+
+}

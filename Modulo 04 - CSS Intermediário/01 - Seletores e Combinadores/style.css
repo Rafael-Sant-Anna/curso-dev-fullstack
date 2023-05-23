@@ -1,0 +1,53 @@
+/*
+Estilizando somente o paragrafo dentro da div
+div p{
+    color: red;
+}
+
+.exemplo p {
+    color: red;
+}
+.exemplo .red {
+    color: red;
+}
+
+------
+passando a tag e classe(Combination)
+.exemplo p.red {
+    color: red;
+}
+
+-------
+passando a mesma configuração para varias tags
+h1,h2,h3{
+    color: blue;
+}
+
+
+*/
+.exemplo p.red {
+    color: red;
+}
+
+.margin{
+    margin: 50px;
+}
+
+h1,h2,h3{
+    color: blue;
+}
+
+/*Nessa caso, faz atribuição somente para os filhos do pai*/
+.exemplo1 > p {
+    color: purple;
+}
+
+/*Nessa caso, faz atribuição para o primeiro irmão e para nenhum filho*/
+.exemplo2 + p {
+    color: blue;
+}
+
+/*Nessa caso, faz atribuição para todos irmãos e para nenhum filho*/
+.exemplo3 ~ p {
+    color: yellow;
+}

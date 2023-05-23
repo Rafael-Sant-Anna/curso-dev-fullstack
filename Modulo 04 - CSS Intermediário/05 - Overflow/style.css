@@ -1,0 +1,26 @@
+/*
+    Desse forma é possivel observa que está ocorrendo um estouro de informação
+    div{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+tenho duas opçoes
+
+overflow: scroll; tudo que for estourar a caixa, add scroll
+overflow: hidden; esconder tudo que estoura a caixa.
+
+*/
+
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    overflow: auto;/*ele que determina aonde vai a barra se é na vertical ou horizontal*/
+    /*overflow: scroll; Coloca a barra tanto na vertical como na horizontal*/
+    /*overflow-x: hidden; esconder a barra na horizontal*/
+    /*overflow-y: hidden; esconder a barra na vertical*/
+
+}
+
