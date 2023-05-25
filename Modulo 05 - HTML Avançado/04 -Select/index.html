@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="salvar.html" method="GET">
+             
+        <!-- colocando o selected na option já determina o valor de inicio-->
+        <label for="">Cidades</label>
+        <br>
+        <select name="cidade" id="">
+            <option selected value="">-- Selecione --</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+        </select>
+        <br><br>
+
+        <label for="">Carro:</label>
+        <br>
+        <select name="carro" id="">
+            <option selected value="">-- Selecione --</option>
+            <optgroup label="Honda">
+                <option value="Civic">Civic</option>
+            </optgroup>
+            <optgroup label="Chrevolett">
+                <option value="Celta">Celta</option>
+                <option value="Prisma">Prisma</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <button>Enviar</button>
+        <br>
+    </form>
+</body>
+
+</html>

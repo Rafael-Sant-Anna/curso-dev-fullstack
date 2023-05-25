@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="salvar.html" method="GET">
+        <!-- Fieldset é o mesmo que um radio grupbox
+            determinar todos os elementos que ficam dentro dele
+        -->
+        <fieldset>
+            <!-- Legend é filho do fieldset que permite add o nome no groupbox-->
+            <legend>Dados Usuário</legend>
+            <!--Auto completar-->
+            <label for="">Digite sua fruta preferida:</label>
+            <br>
+            <!-- passando a lista de frutas para o input
+            obsservação para passar a a lista o datalist tem que ter o ID,
+            esse ID do datalist tem que esta na List do input.
+        -->
+            <input list="listaFrutas" type="text" name="fruta" placeholder="Digite a fruta">
+
+            <datalist id="listaFrutas">
+                <option value="Abacate">
+                <option value="Abacaxi">
+                <option value="Ameixa">
+                <option value="Acerola">
+            </datalist>
+            <br><br>
+
+            <!-- Textarea
+                Campo de comentário
+             -->
+            <label for="">Digite um comentário</label>
+            <br>
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
