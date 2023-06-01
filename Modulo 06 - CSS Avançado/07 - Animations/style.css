@@ -1,0 +1,50 @@
+body{
+    margin: 100px;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+
+    /* Executando a animação*/
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    animation-name: minhaAnimacao;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite ;/*Determina a quantidade de vezes que a animação será executada*/
+    animation-delay: 500ms;/*atrazando a animação*/
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse; /* reverse- começa do fim para o inicio - alternate - interla de forma aletoria o começo da animação, as vezes começa do inicio outras vezes não*/
+
+    
+    
+}
+
+/* Configuraçãoes da Animação*/
+@keyframes minhaAnimacao {
+    /*
+    
+    from{
+        background-color: black;
+    }
+    to {
+        background-color: red;
+        transform: rotate(360deg);
+    }
+    */
+
+    0%{
+        background-color: black;
+    }
+    33%{
+        transform: rotate(360deg) translate(50px, 100px);
+    }
+    50%{
+        border: 15px solid green;
+    }
+    100% {
+        border: 0 solid green;
+        background-color: red;
+        transform: rotate(360deg);
+    }
+}

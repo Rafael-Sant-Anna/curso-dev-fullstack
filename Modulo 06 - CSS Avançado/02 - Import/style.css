@@ -1,0 +1,8 @@
+
+@import"variaveis.css";
+@import"comuns.css";
+
+button{
+    background: var(--color-primary);
+    color: white;
+}

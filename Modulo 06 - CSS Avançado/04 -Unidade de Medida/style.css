@@ -1,0 +1,47 @@
+:root{
+   font-size: 50px; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 12px;
+}
+
+.box{
+    /* Para pegar 100% da tela,
+    deve ser usado o vw e vh,
+    se não usar não será pego os 100%
+    */
+    width: 100vw;
+    height: 100vh;
+    /*width: 100%;
+    height: 100%;*/
+    background-color: black;
+}
+
+.box1{   
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+.Exemplo1{
+    /* 
+        em é relativo ao font-size pai que nesse caso é o Body,
+        nesse exemplo a baixo esta com 12*2 .
+    */
+    font-size: 2em;
+}
+
+.Exemplo2{
+    /* 
+        em é relativo ao font-size pai que nesse caso é o root,
+        nesse exemplo a baixo esta com 50*2 .
+    */
+    font-size: 2rem;
+}
