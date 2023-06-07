@@ -1,0 +1,54 @@
+.container{
+    background-color: silver;
+    /* Todos os filhos ficam em linha*/
+    display: flex; 
+
+    /* 
+        flex-direction: row;
+        row - linha, 
+        row-reverse - joga para o final da linha começando de trás para frente,
+        column - deixa os resultado em colunas, 
+        column-reverse - começando de trás para frente,
+    
+    */
+
+    /*
+        flex-wrap: wrap;
+        Quando ocorre estouro de tela
+        wrap - Ele mantem o tamanho do arquivo, se não couber na tela, ele joga para a linha de baixo,
+        mantendo o tamanho do mesmo.
+
+        wrap-reverse - joga linha para baixa invertendo do ultimo sendo primeiro.
+
+        nowrap - Ele espreme e mantém o conteúdo na linha.    
+    */
+    
+    /* É a junção dos dois em uma linha só*/
+    flex-flow: row wrap;
+
+
+
+    
+   
+}
+
+.caixa{
+    width: 300px;
+    height: 100px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
