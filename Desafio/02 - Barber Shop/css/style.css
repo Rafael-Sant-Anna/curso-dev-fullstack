@@ -1,0 +1,63 @@
+:root{
+    --color-primary:#917758;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{        
+    font-family: 'Poppins', sans-serif;  
+}
+
+.home{        
+    background-image: url('../assets/images/bg-home.jpg');
+    height: 100vh; /* Sem o Tamnho a Imagem não aparece*/   
+    background-size: cover; /*a imagem é redimensionada para encaixar na área disponível, entretanto, ela não será distorcida. Se a área não for proporcional ao aumento ou redução da imagem, a parte excedente não será exibida*/
+}
+
+.home .header{
+    padding: 30px 0;
+}
+
+.home .header .nav{
+    display: flex;
+    justify-content: center;
+
+}
+
+.home .header .nav ul{
+    display: flex;
+    list-style: none;      
+}
+
+.home .header .nav ul li{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.home .header .nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;/* esse aqui é para aumentar o range de click*/
+}
+
+.home .header .nav ul li a:hover{
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.home .header .nav ul li .logo{
+   margin: 0 30px; 
+}
+
+.home .banner{
+    color: #fff;
+    justify-content: center;
+}
+
