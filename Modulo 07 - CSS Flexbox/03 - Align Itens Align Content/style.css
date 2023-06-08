@@ -1,0 +1,37 @@
+
+.container{
+    height: 600px;
+    background-color: silver;
+    display: flex;
+    flex-direction: row;     
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* 
+        Caso a tela seja deminuida mas necessite que fique um embaixo do outros
+        deve ser usado o recurso abaixo
+    */    
+    align-content: center;
+}
+
+.caixa{
+    width: 100px;
+    height: 100px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}

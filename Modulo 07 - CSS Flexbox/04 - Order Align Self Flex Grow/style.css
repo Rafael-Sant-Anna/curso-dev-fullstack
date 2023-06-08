@@ -1,0 +1,63 @@
+
+.container{
+    height: 600px;
+    background-color: silver;
+    display: flex;
+    flex-direction: row;     
+    justify-content: space-between;
+   
+    flex-wrap: wrap;  
+   
+}
+
+.caixa{
+    width: 100px;
+    height: 100px;
+}
+
+/* Definindo a ordem dos elementos
+.red{
+    order: 3;
+    background-color: red;
+}
+
+.blue{
+    order: 4;
+    background-color: blue;
+}
+
+.yellow{
+    order: 1;
+    background-color: yellow;
+}
+
+.green{
+    order: 2;
+    background-color: green;
+}
+*/
+
+/*
+    Align-self altera somente o posicinamento do elemento
+    flex-grow altera somente width do elemento
+*/
+.red{
+    align-self: center;
+    background-color: red;
+}
+
+.blue{
+    flex-grow: 2;    
+    background-color: blue;
+}
+
+.yellow{
+    flex-grow: 3;
+    
+    background-color: yellow;
+}
+
+.green{
+    order: -1;/*jogando para frente visto que quando não declarado todos recebem order 0*/
+    background-color: green;
+}

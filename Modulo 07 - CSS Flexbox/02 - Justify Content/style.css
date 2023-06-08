@@ -1,0 +1,31 @@
+
+.container{
+    display: flex;
+    flex-direction: row; /* Padrão*/
+    /*justify-content: flex-start;  Padrão tando para direction row como column*/
+    /*justify-content: flex-end;  Joga para o final da linha tando para direction row como column*/
+    justify-content: center;/* Centraliza tando para direction row como column*/
+    /*justify-content: space-between; Add spaço entre os elementos tando para direction row como column*/
+    /*justify-content: space-around; espaço ao redor deles tando para direction row como column*/
+}
+
+.caixa{
+    width: 100px;
+    height: 100px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
