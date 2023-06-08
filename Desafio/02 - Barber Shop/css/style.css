@@ -11,7 +11,17 @@ body{
     font-family: 'Poppins', sans-serif;  
 }
 
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/***********
+    *Home
+************/
+
 .home{        
+    position: relative; /*Para centralizar o Banner*/
     background-image: url('../assets/images/bg-home.jpg');
     height: 100vh; /* Sem o Tamnho a Imagem não aparece*/   
     background-size: cover; /*a imagem é redimensionada para encaixar na área disponível, entretanto, ela não será distorcida. Se a área não for proporcional ao aumento ou redução da imagem, a parte excedente não será exibida*/
@@ -33,9 +43,10 @@ body{
 }
 
 .home .header .nav ul li{
+    width: 150px;
     display: flex;
-    align-items: center;
-    margin: 0 10px;
+    align-items: center;        
+    justify-content: center;
 }
 
 .home .header .nav ul li a{
@@ -56,8 +67,128 @@ body{
    margin: 0 30px; 
 }
 
+/******************* 
+    * Home - Banner
+    - Para centralizar o Banner é necessário usar o position relative na section,
+    para o CSS saber que quero centralizar no centro da section, 
+    Centralizando pelo position, ele precisa saber aonde que tem que ser centralizado
+    e ele sabe atraves do position relativo.
+    Por isso a section terá um position relativo.
+********************/
 .home .banner{
-    color: #fff;
-    justify-content: center;
+    color: #fff;    
+    text-align: center; 
+    /* Centralizando o Banner
+        * position: absolute - Me permite usar o top e left 50%
+        para eu usar o recurso, preciso saber o Height e Width o backgorund
+        vai me ajudar a saber o tamanho que preciso.
+        depois, para centralizar na tela, devo usar os margin-top e left com valores
+        negativos.
+    */
+    position: absolute; 
+    height: 270px;
+    width: 770px;
+    top: 50%;
+    left: 50%;
+    margin-top: -135px;
+    margin-left:-385px ;
+    /*background-color: purple;  */
 }
+
+.home .banner span{
+    display: block; /*Preciso fazer isso para o bigode cair para a linha de baixo*/
+}
+
+.home .banner .title-banner{
+    font-size:120px ;
+}
+
+.home .banner .subtitle-banner{
+    color: var(--color-primary);    
+    text-transform: uppercase;  
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 14px;
+
+}
+
+.home .banner .information-banner{
+    margin-bottom: 15px;
+}
+
+/*
+    * Aboult
+*/
+
+.about{
+    height: 100vh;
+    background-color: var(--color-primary);
+
+}
+
+.about .container{
+    display: flex;
+}
+
+.about .container .timing{
+    width: 33%;
+    padding: 20px;
+    background-image: url(../assets/images/brush-big.jpg);
+    background-size: cover;
+    /*height: 100vh;  Sem o Tamnho a Imagem não aparece*/
+}
+
+.about .container .timing .overlay{
+    background-color: rgba(0, 0, 0, 0.9);
+    
+    text-align: center;
+    padding: 40px 20px; ;
+}
+
+.about .container .timing .overlay .icon-cut{
+    width: 50px;
+}
+
+.about .container .timing .overlay h3{
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    width: fit-content; /*deixando do tamanho do conteudo e não do tamanho de todo o h3*/
+    margin: 0 auto 30px auto; /*Para centralizar o conteudo novamente*/
+    font-size: 30px;
+}
+
+.about .container .timing .overlay .text{
+    margin: 10px 0;
+}
+
+.about .container .timing .text:after{
+    content: '•';
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.about .container .timing .text:last-of-type:after{
+    content: '|';
+}
+
+.about .container .timing .overlay .text h4{
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .container .timing .overlay  span{
+    color: #fff;
+    font-size: 15px;
+    display: block;
+}
+
+.about .container .experience{
+    width: 66%;
+}
+
+
 
