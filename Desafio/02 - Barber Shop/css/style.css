@@ -1,17 +1,20 @@
-:root{
-    --color-primary:#917758;
+:root {
+    --color-primary: #917758;
+    --color-primary-light: #f5eee6;
+    --color-secondary: #3c2915;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{        
-    font-family: 'Poppins', sans-serif;  
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container {
     width: 1170px;
     margin: 0 auto;
 }
@@ -20,51 +23,55 @@ body{
     *Home
 ************/
 
-.home{        
-    position: relative; /*Para centralizar o Banner*/
+.home {
+    position: relative;
+    /*Para centralizar o Banner*/
     background-image: url('../assets/images/bg-home.jpg');
-    height: 100vh; /* Sem o Tamnho a Imagem não aparece*/   
-    background-size: cover; /*a imagem é redimensionada para encaixar na área disponível, entretanto, ela não será distorcida. Se a área não for proporcional ao aumento ou redução da imagem, a parte excedente não será exibida*/
+    height: 100vh;
+    /* Sem o Tamnho a Imagem não aparece*/
+    background-size: cover;
+    /*a imagem é redimensionada para encaixar na área disponível, entretanto, ela não será distorcida. Se a área não for proporcional ao aumento ou redução da imagem, a parte excedente não será exibida*/
 }
 
-.home .header{
+.home .header {
     padding: 30px 0;
 }
 
-.home .header .nav{
+.home .header .nav {
     display: flex;
     justify-content: center;
 
 }
 
-.home .header .nav ul{
+.home .header .nav ul {
     display: flex;
-    list-style: none;      
+    list-style: none;
 }
 
-.home .header .nav ul li{
+.home .header .nav ul li {
     width: 150px;
     display: flex;
-    align-items: center;        
+    align-items: center;
     justify-content: center;
 }
 
-.home .header .nav ul li a{
+.home .header .nav ul li a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
-    padding: 20px;/* esse aqui é para aumentar o range de click*/
+    padding: 20px;
+    /* esse aqui é para aumentar o range de click*/
 }
 
-.home .header .nav ul li a:hover{
+.home .header .nav ul li a:hover {
     border-bottom: 1px solid var(--color-primary);
     color: var(--color-primary);
 }
 
-.home .header .nav ul li .logo{
-   margin: 0 30px; 
+.home .header .nav ul li .logo {
+    margin: 0 30px;
 }
 
 /******************* 
@@ -75,9 +82,9 @@ body{
     e ele sabe atraves do position relativo.
     Por isso a section terá um position relativo.
 ********************/
-.home .banner{
-    color: #fff;    
-    text-align: center; 
+.home .banner {
+    color: #fff;
+    text-align: center;
     /* Centralizando o Banner
         * position: absolute - Me permite usar o top e left 50%
         para eu usar o recurso, preciso saber o Height e Width o backgorund
@@ -85,34 +92,35 @@ body{
         depois, para centralizar na tela, devo usar os margin-top e left com valores
         negativos.
     */
-    position: absolute; 
+    position: absolute;
     height: 270px;
     width: 770px;
     top: 50%;
     left: 50%;
     margin-top: -135px;
-    margin-left:-385px ;
+    margin-left: -385px;
     /*background-color: purple;  */
 }
 
-.home .banner span{
-    display: block; /*Preciso fazer isso para o bigode cair para a linha de baixo*/
+.home .banner span {
+    display: block;
+    /*Preciso fazer isso para o bigode cair para a linha de baixo*/
 }
 
-.home .banner .title-banner{
-    font-size:120px ;
+.home .banner .title-banner {
+    font-size: 120px;
 }
 
-.home .banner .subtitle-banner{
-    color: var(--color-primary);    
-    text-transform: uppercase;  
+.home .banner .subtitle-banner {
+    color: var(--color-primary);
+    text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 5px;
     font-size: 14px;
 
 }
 
-.home .banner .information-banner{
+.home .banner .information-banner {
     margin-bottom: 15px;
 }
 
@@ -120,49 +128,58 @@ body{
     * Aboult
 */
 
-.about{
-    height: 100vh;
+.about {
+    /* height: 100vh;*/
     background-color: var(--color-primary);
 
 }
 
-.about .container{
+.about .container {
     display: flex;
 }
 
-.about .container .timing{
+.about .container .timing {
     width: 33%;
     padding: 20px;
     background-image: url(../assets/images/brush-big.jpg);
     background-size: cover;
     /*height: 100vh;  Sem o Tamnho a Imagem não aparece*/
+
+    /*
+        Deixando um elemento sobre o outro
+    */
+    position: relative;
+    top: -50px
 }
 
-.about .container .timing .overlay{
+.about .container .timing .overlay {
     background-color: rgba(0, 0, 0, 0.9);
-    
+
     text-align: center;
-    padding: 40px 20px; ;
+    padding: 40px 20px;
+    ;
 }
 
-.about .container .timing .overlay .icon-cut{
+.about .container .timing .overlay .icon-cut {
     width: 50px;
 }
 
-.about .container .timing .overlay h3{
+.about .container .timing .overlay h3 {
     text-transform: uppercase;
     border-bottom: 1px solid var(--color-primary);
     color: var(--color-primary);
-    width: fit-content; /*deixando do tamanho do conteudo e não do tamanho de todo o h3*/
-    margin: 0 auto 30px auto; /*Para centralizar o conteudo novamente*/
+    width: fit-content;
+    /*deixando do tamanho do conteudo e não do tamanho de todo o h3*/
+    margin: 0 auto 30px auto;
+    /*Para centralizar o conteudo novamente*/
     font-size: 30px;
 }
 
-.about .container .timing .overlay .text{
+.about .container .timing .overlay .text {
     margin: 10px 0;
 }
 
-.about .container .timing .text:after{
+.about .container .timing .text:after {
     content: '•';
     color: #fff;
     display: block;
@@ -170,25 +187,215 @@ body{
     margin-top: 10px;
 }
 
-.about .container .timing .text:last-of-type:after{
+.about .container .timing .text:last-of-type:after {
     content: '|';
 }
 
-.about .container .timing .overlay .text h4{
+.about .container .timing .overlay .text h4 {
     color: gray;
     font-weight: 400;
     font-size: 15px;
 }
 
-.about .container .timing .overlay  span{
+.about .container .timing .overlay span {
     color: #fff;
     font-size: 15px;
     display: block;
 }
 
-.about .container .experience{
+/*
+    * Experience
+*/
+
+.about .container .experience {
     width: 66%;
+    color: #fff;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.about .container .experience h2 {
+    font-weight: 400;
+    font-size: 40;
+}
+
+.about .container .experience h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .container .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .container .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+/****
+    * Services
+***/
+.services {
+    padding: 100px;
+    text-align: center;
+    background-color: var(--color-primary-light);
+}
+
+.services .container h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services .container .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.services .container .boxes .box {
+    border: 2px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.services .container .boxes .box h4 {
+    color: var(--color-secondary);
+    margin-top: 30px;
+}
+
+.services .container .boxes .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
 }
 
 
 
+/****
+    * appointment - agendamento
+***/
+
+.appointment {
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    height: 100vh;
+    /* Add a cadeira*/
+    background-image: url('../assets/images/chair-ic.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+
+.appointment .container h2 {
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.appointment .container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.appointment .container form {
+    margin-top: 80px;
+}
+
+.appointment .container .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .container .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.appointment .container .input-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.appointment .container label {
+    display: block;
+    color: var(--color-primary-light);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.appointment .container .personal-data input,
+.appointment .container .personal-data select,
+.appointment .container textarea {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.appointment .container textarea{
+    height: 100px;
+}
+
+.appointment .container button{
+    background-color: var(--color-secondary);
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*
+    * Gallery
+*/
+
+.gallery {
+    padding: 100px 0;    
+    background-color: var(--color-primary-light);
+}
+
+.gallery .container h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery .container img{
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery .container .gallery-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 100vh;    
+    margin: 50px auto; 
+      
+}
+
+.gallery .container .gallery-wrapper div{
+    border: 4px solid var(--color-primary);    
+    margin: 6px;
+    width: 33%;   
+}
+
+.gallery .container .gallery-wrapper div img{
+    width: 100%;
+}

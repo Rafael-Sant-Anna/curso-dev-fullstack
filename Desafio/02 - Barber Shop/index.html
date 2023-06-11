@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barber Shop</title>    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">    
+    <title>Barber Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -52,7 +52,7 @@
         <div class="container">
             <div class="timing">
                 <div class="overlay">
-                    
+
                     <img class="icon-cut" src="./assets/images/classic-cut.png" alt="Horários">
 
                     <h3>Horários</h3>
@@ -61,7 +61,7 @@
                         <h4>Segunda-feira à Sexta-feira</h4>
                         <span>09:00 AM - 19:00 PM</span>
                     </div>
-                    
+
                     <div class="text">
                         <h4>Sábado</h4>
                         <span>08:00 AM - 17:00 PM</span>
@@ -70,8 +70,8 @@
                     <div class="text">
                         <h4>Domingo</h4>
                         <span>Fechado</span>
-                    </div>   
-                    
+                    </div>
+
                     <img src="./assets/images/loc-ic.png" alt="Localização">
                     <span>Rua da Matriz, 33</span>
                     <br>
@@ -80,9 +80,142 @@
                     <span>(27) 99999-9999)</span>
                 </div>
             </div>
-            <div class="experience">Experiência</div>
+            <div class="experience">
+                <span>Uma história única</span>
+                <h2>52 anos de experiência</h2>
+                <!-- Estou fazendo assim para usar o diplay flex e colocar os elementos paragrafos e imagens lado a lado-->
+                <div class="text">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ducimus doloribus voluptatem
+                            laboriosam, error cum neque facilis, impedit odio tempore reiciendis, numquam est ullam fuga
+                            maiores necessitatibus accusantium tempora deleniti?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ducimus doloribus voluptatem
+                            laboriosam, error cum neque facilis, impedit odio tempore reiciendis, numquam est ullam fuga
+                            maiores necessitatibus accusantium tempora deleniti?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ducimus doloribus voluptatem
+                            laboriosam, error cum neque facilis, impedit odio tempore reiciendis, numquam est ullam fuga
+                            maiores necessitatibus accusantium tempora deleniti?</p>
+                    </div>
+                    <img src="./assets/images/shave-brush.jpg" alt="Barber">
+                </div>
+
+
+            </div>
         </div>
 
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <img src="./assets/images/heading-ic.png" alt="serviços">
+
+            <div class="boxes">
+                <div class="box">
+                    <img src="./assets/images/classic-cut.png" alt="classic cut">
+                    <h4>Lorem ipsum </h4>
+                    <img src="./assets/images/head-line-ic.png" alt="head line">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nobis incidunt, totam
+                        reprehenderit autem expedita ex, architecto veritatis accusantium vitae dolore dolorem saepe
+                        quas similique maxime eum voluptates quia unde?</p>
+                </div>
+
+                <div class="box">
+                    <img src="./assets/images/clipper-cut.png" alt="clipper cut">
+                    <h4>Lorem ipsum </h4>
+                    <img src="./assets/images/head-line-ic.png" alt="head line">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nobis incidunt, totam
+                        reprehenderit autem expedita ex, architecto veritatis accusantium vitae dolore dolorem saepe
+                        quas similique maxime eum voluptates quia unde?</p>
+                </div>
+
+                <div class="box">
+                    <img src="./assets/images/razoe-shaver.png" alt="razoe shaver">
+                    <h4>Lorem ipsum </h4>
+                    <img src="./assets/images/head-line-ic.png" alt="head line">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nobis incidunt, totam
+                        reprehenderit autem expedita ex, architecto veritatis accusantium vitae dolore dolorem saepe
+                        quas similique maxime eum voluptates quia unde?</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment">
+        <div class="container">
+            <h2>Faça um Agendamento</h2>
+            <img src="./assets/images/heading-ic-white.png" alt="Faça um agendamento">
+
+            <form action="">
+                <div class="personal-data">
+                    <div class="input-wrapper">
+                        <label for="">Nome:</label>
+                        <input type="text" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="">E-mail:</label>
+                        <input type="text" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="">Telefone:</label>
+                        <input type="text" placeholder="Digite seu telefone">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="">Tipo de Serviço:</label>
+                        <select name="" id="">
+                            <option value="">Corte de Cabelo Tesoura</option>
+                            <option value="">Corte de Cabelo Maquina</option>
+                            <option value="">Corte de Cabelo e Barba</option>
+                            <option value="">Barba</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="">Mensagem</label>
+                    <textarea></textarea>
+                </div>
+
+                <button>Enviar</button>
+            </form>
+
+
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Galeria de Fotos</h2>
+            <img src="./assets/images/heading-ic.png" alt="Galeria de Fotos">
+
+            <div class="gallery-wrapper">
+                <div>
+                    <img src="./assets/images/gallery-img1.png" alt="Galeria">
+                </div>
+                <div>
+                    <img src="./assets/images/gallery-img2.png" alt="Galeria">
+                </div>
+                <div>
+                    <img src="./assets/images/gallery-img3.png" alt="Galeria">
+                </div>
+                <div>
+                    <img src="./assets/images/gallery-img4.png" alt="Galeria">
+                </div>
+                <div>
+                    <img src="./assets/images/gallery-img5.png" alt="Galeria">
+                </div>
+                <div>
+                    <img src="./assets/images/gallery-img6.png" alt="Galeria">
+                </div>
+                <div>
+                    <img src="./assets/images/gallery-img7.png" alt="Galeria">
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
