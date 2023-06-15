@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    
+    color: white;
+}
+
+/*
+    - No media consigo alterar os elementos após chegar
+*/
+@media (max-width:200px){
+    body{
+        background-color: blue;
+        color: white;
+    } 
+
+    p {
+        font-size: 25px;
+    }
+
+    
+}
+
+@media (min-width:400px) and (max-width:600px){
+    body{
+        background-color: blue;
+        color: white;
+    } 
+
+    p {
+        font-size: 25px;
+    }
+
+    
+}
