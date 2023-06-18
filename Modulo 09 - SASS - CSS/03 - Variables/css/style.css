@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  /*add hover*/
+}
+.container .box {
+  width: 30%;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 20px;
+}
+.container .active {
+  background-color: red;
+}
+.container h2 {
+  font-size: 22px;
+  margin: 10px 20px 30px 20px;
+}
+.container p {
+  font-size: 18px;
+}
+.container p.hidden {
+  display: none;
+}
+.container a {
+  color: green;
+}
+.container a:hover {
+  color: yellow;
+}
+.container a + p.hidden {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

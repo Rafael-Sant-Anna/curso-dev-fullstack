@@ -1,0 +1,29 @@
+/*
+    mixin é o mesmo que criar uma função para os estilos
+
+    @mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+    - Passando parametro no mixin
+    @mixin p-reset-list($margem, $espacamento, $estilo){
+    margin: $margem;
+    padding: $espacamento;
+    list-style: $estilo;
+    }
+
+    - Passando parametro no mixin com valor default
+    @mixin p-reset-list($margem:0, $espacamento:0, $estilo:none){
+    margin: $margem;
+    padding: $espacamento;
+    list-style: $estilo;
+    }
+*/
+
+@mixin reset-list($margem:0, $espacamento:0, $estilo:none){
+    margin: $margem;
+    padding: $espacamento;
+    list-style: $estilo;
+}

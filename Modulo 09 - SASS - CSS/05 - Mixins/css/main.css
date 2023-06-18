@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+/*
+    mixin é o mesmo que criar uma função para os estilos
+
+    @mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+    - Passando parametro no mixin
+    @mixin p-reset-list($margem, $espacamento, $estilo){
+    margin: $margem;
+    padding: $espacamento;
+    list-style: $estilo;
+    }
+
+    - Passando parametro no mixin com valor default
+    @mixin p-reset-list($margem:0, $espacamento:0, $estilo:none){
+    margin: $margem;
+    padding: $espacamento;
+    list-style: $estilo;
+    }
+*/
+/*
+    Usando a configuração do mixin
+*/
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*passando valor para os parametros reset-list(100px, 10px, square)*/
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  /*add hover*/
+}
+.container .box {
+  width: 30%;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 20px;
+}
+.container .active {
+  background-color: red;
+}
+.container h2 {
+  font-size: 22px;
+  margin: 10px 20px 30px 20px;
+}
+.container p {
+  font-size: 18px;
+}
+.container p.hidden {
+  display: none;
+}
+.container a {
+  color: green;
+}
+.container a:hover {
+  color: yellow;
+}
+.container a + p.hidden {
+  display: block;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,6 @@
+Instalar a extensão : Live Sass Compiler
+Clique na engrenagem e selecione a opção "Extension Settings".
+Procure a opção Live Sass compile > Settings Show Output Window ON e coloque none.
+
+No rodapé do vscode vai ter Watch SASS, clica nele para ativar.
+Quando clicado ele pega o codigo SASS e cria uma arquivo para CSS.
